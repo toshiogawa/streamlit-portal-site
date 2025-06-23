@@ -3,7 +3,8 @@ import os
 
 st.title('Maintenance')
 # フォルダパスを指定
-folder_path = r'\\data'
+# folder_path = r'\\data'
+folder_path = os.path.join(os.path.dirname(__file__), "../data")
 
 # フォルダ内のファイルリストを取得
 file_list = os.listdir(folder_path)
