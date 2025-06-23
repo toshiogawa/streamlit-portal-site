@@ -3,8 +3,9 @@ import os
 
 st.title('Maintenance')
 # フォルダパスを指定
+# folder_path = r'\\gfgij13\第１技術課\CA活動\チーム１F\1FグループCA21年度\工場長報告\新テーマ及びグループ（小川L、池田L）\PS\data'
 # folder_path = r'\\data'
-folder_path = os.path.join(os.path.dirname(__file__), "../data")
+folder_path = os.path.join(os.path.dirname(__file__), "..\data")
 
 # フォルダ内のファイルリストを取得
 file_list = os.listdir(folder_path)
