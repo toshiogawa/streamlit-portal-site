@@ -53,4 +53,4 @@ st.markdown("""
 st.sidebar.write("関連サイト")
 st.sidebar.write("・[防衛装備庁](https://www.mod.go.jp/atla/)")  # リンクを貼る
 st.sidebar.write("・[ファイル検索システム](http://hnsvzz0s:9988/webapps/home/session.html?app=SearchApp4)") # リンクを貼る
-st.sidebar.write("・[KHI岐阜カレンダー2025](https://www.khiunion.or.jp/wp-content/themes/kawasakijukou/pdf/calendar/2025/04_2025-gifu-nagoya.pdf)") # リンクを貼る
+st.sidebar.write("・[KHI岐阜カレンダー](https://www.khiunion.or.jp/wp-content/themes/kawasakijukou/pdf/calendar/2025/04_2025-gifu-nagoya.pdf)") # リンクを貼る
