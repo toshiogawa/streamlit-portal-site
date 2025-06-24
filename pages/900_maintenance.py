@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-st.title('Maintenance')
+st.title('Maintenance(一部工事中)')
 
 # dataフォルダの相対パス（このファイルと同じ階層に置いてください）
 folder_path = os.path.join(os.path.dirname(__file__), "../data")
