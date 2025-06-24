@@ -12,9 +12,6 @@ if not os.path.exists(folder_path):
     st.error(f"フォルダが存在しません: {folder_path}")
     st.stop()
 
-# フォルダ内のファイルリストを取得
-file_list = os.listdir(folder_path)
-
 st.markdown(
     """
 ### メンテナンス  
@@ -22,9 +19,6 @@ st.markdown(
 - ファイルのアップロードを行うと自動的に更新されます。  
 """
 )
-
-# フォルダを開くボタン（クラウドでは実行不可なので非表示）
-# st.button("フォルダを開く") → Streamlit Cloudでは使用不可
 
 st.markdown("---")
 st.markdown("### アイテム追加")
@@ -39,6 +33,9 @@ if uploaded_file is not None:
         f.write(uploaded_file.getbuffer())
     st.success(f"アップロード完了: {uploaded_file.name}")
 
+# 📌 最新のフォルダ内のファイルリストをここで再取得
+file_list = os.listdir(folder_path)
+
 # フォルダ内のファイルを表示
 st.markdown("---")
 st.markdown("### フォルダ内のファイル")
@@ -48,4 +45,5 @@ if file_list:
         st.write(file)
 else:
     st.write("フォルダにファイルがありません。")
+
 
